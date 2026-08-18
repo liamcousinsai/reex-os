@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>REEX OS</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f5f5f2;
+  color:#161616
+}
+header{
+  background:#111;
+  color:white;
+  padding:22px 20px
+}
+.logo{
+  font-size:24px;
+  font-weight:800;
+  letter-spacing:-1px
+}
+.logo span{color:#b9e75d}
+main{
+  max-width:1200px;
+  margin:auto;
+  padding:28px 18px
+}
+h1{
+  font-size:34px;
+  margin:0 0 6px
+}
+.sub{
+  color:#777;
+  margin-bottom:28px
+}
+.stats{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px
+}
+.card{
+  background:white;
+  border:1px solid #e3e3df;
+  border-radius:14px;
+  padding:18px
+}
+.label{
+  color:#777;
+  font-size:13px
+}
+.number{
+  font-size:27px;
+  font-weight:750;
+  margin-top:8px
+}
+section{
+  margin-top:28px
+}
+.section-title{
+  font-size:20px;
+  font-weight:750;
+  margin-bottom:12px
+}
+.pipeline{
+  display:grid;
+  gap:10px
+}
+.deal{
+  background:white;
+  padding:16px;
+  border-radius:12px;
+  border-left:5px solid #b9e75d;
+  display:flex;
+  justify-content:space-between;
+  align-items:center
+}
+.deal strong{display:block}
+.deal small{color:#777}
+.value{font-weight:700}
+.nav{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  background:#111;
+  color:white;
+  display:flex;
+  justify-content:space-around;
+  padding:14px 5px;
+  font-size:12px
+}
+.active{color:#b9e75d}
+@media(min-width:800px){
+  .stats{grid-template-columns:repeat(4,1fr)}
+  main{padding:40px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">REEX <span>OS</span></div>
+</header>
+
+<main>
+  <h1>Good evening, Liam.</h1>
+  <div class="sub">Here's what needs your attention.</div>
+
+  <div class="stats">
+    <div class="card">
+      <div class="label">Pipeline</div>
+      <div class="number">£1.24m</div>
+    </div>
+    <div class="card">
+      <div class="label">Weighted Forecast</div>
+      <div class="number">£682k</div>
+    </div>
+    <div class="card">
+      <div class="label">Active Projects</div>
+      <div class="number">12</div>
+    </div>
+    <div class="card">
+      <div class="label">Tasks Due</div>
+      <div class="number">8</div>
+    </div>
+  </div>
+
+  <section>
+    <div class="section-title">Needs Attention</div>
+    <div class="pipeline">
+      <div class="deal">
+        <div>
+          <strong>3 quotes awaiting decision</strong>
+          <small>Follow up today</small>
+        </div>
+        <div>→</div>
+      </div>
+      <div class="deal">
+        <div>
+          <strong>2 overdue project tasks</strong>
+          <small>Operations</small>
+        </div>
+        <div>→</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">Pipeline</div>
+    <div class="pipeline">
+      <div class="deal">
+        <div>
+          <strong>New Enquiry</strong>
+          <small>7 opportunities</small>
+        </div>
+        <div class="value">£284k</div>
+      </div>
+      <div class="deal">
+        <div>
+          <strong>Survey / Qualification</strong>
+          <small>5 opportunities</small>
+        </div>
+        <div class="value">£318k</div>
+      </div>
+      <div class="deal">
+        <div>
+          <strong>Quote Submitted</strong>
+          <small>4 opportunities</small>
+        </div>
+        <div class="value">£412k</div>
+      </div>
+      <div class="deal">
+        <div>
+          <strong>Negotiation</strong>
+          <small>2 opportunities</small>
+        </div>
+        <div class="value">£226k</div>
+      </div>
+    </div>
+  </section>
+
+  <div style="height:80px"></div>
+</main>
+
+<div class="nav">
+  <div class="active">Home</div>
+  <div>Pipeline</div>
+  <div>Projects</div>
+  <div>Tasks</div>
+  <div>More</div>
+</div>
+
+</body>
+</html>
